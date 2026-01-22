@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Dubey Tuition Classes</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background-color: #fef6f0;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #ff9966, #ff5e62);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff7f50;
+        }
+        nav a {
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff6347;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://images.unsplash.com/photo-1581091215366-6c7585e5ad1b?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+        .hero button {
+            background-color: #ff6347;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .hero button:hover {
+            transform: scale(1.05);
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background-color: #fff2e6;
+            justify-content: center;
+        }
+        .about img {
+            max-width: 300px;
+            border-radius: 15px;
+            margin: 20px;
+        }
+        .about-text {
+            max-width: 600px;
+            margin: 20px;
+        }
+        .about-text h2 {
+            color: #ff6347;
+            margin-bottom: 15px;
+        }
+        .about-text p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+            background-color: #ffe6e1;
+            text-align: center;
+        }
+        .services h2 {
+            color: #ff5e62;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h3 {
+            color: #ff6347;
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 1em;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            background-color: #fff2e6;
+            text-align: center;
+        }
+        .contact h2 {
+            color: #ff5e62;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .contact p {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .contact a:hover {
+            background-color: #ff7f50;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff9966;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .service-cards {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Priyanka Dubey Tuition Classes</h1>
+        <p>Nursery to 10th | CBSE, ICSE & Maharashtra State Board | All Subjects</p>
+        <div class="contact-info">
+            📞 9892247590 | 📧 priyankadubey0923@gmail.com
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#services">Classes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Learn, Grow & Shine!</h2>
+        <p>13+ Years of Teaching Experience | NET, SET, TET, CTET Qualified</p>
+        <button onclick="window.location.href='#contact'">Enroll Now</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <img src="https://images.unsplash.com/photo-1581092580491-9a7a50ff0cb0?auto=format&fit=crop&w=600&q=80" alt="Priyanka Dubey">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I am <strong>Priyanka Dubey</strong>, a passionate educator with more than 13 years of experience teaching students from Nursery to 10th grade.</p>
+            <p>I specialize in CBSE, ICSE, and Maharashtra State Board curricula and have successfully guided students in all subjects. I hold qualifications in NET, SET, TET, CTET, and other competitive exams.</p>
+            <p>My teaching philosophy focuses on interactive learning, personal attention, and building strong foundational knowledge for students of all ages.</p>
+        </div>
+    </section>
+
+    <!-- Services / Classes Section -->
+    <section class="services" id="services">
+        <h2>Classes Offered</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Nursery - KG</h3>
+                <p>Fun learning activities, basics of English, Math, and general awareness with interactive sessions.</p>
+            </div>
+            <div class="card">
+                <h3>Primary (1st - 5th)</h3>
+                <p>All subjects including Science, Math, English, EVS with personal attention to each child.</p>
+            </div>
+            <div class="card">
+                <h3>Middle School (6th - 8th)</h3>
+                <p>CBSE, ICSE, and State Board curriculum coverage with focus on concept clarity.</p>
+            </div>
+            <div class="card">
+                <h3>High School (9th - 10th)</h3>
+                <p>Exam preparation, doubt clearing, and full syllabus coverage for all subjects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>📞 Mobile: 9892247590</p>
+        <p>📧 Email: priyankadubey0923@gmail.com</p>
+        <a href="tel:9892247590">Call Now</a>
+        <a href="mailto:priyankadubey0923@gmail.com">Email Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Priyanka Dubey Tuition Classes. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
